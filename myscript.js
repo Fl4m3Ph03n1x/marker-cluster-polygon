@@ -58,8 +58,6 @@ function setUpMarkerManager(aMap) {
       }));
   });
 
-  //every time we zoom in or out, we have to load the entire array. This is highly inneficient !
-  //Or is it?
   google.maps.event.addListener(mgr, 'loaded', function() {
     mgr.addMarkers(allPOISArray, 9);
     mgr.addMarkers(disctrictsCenter, 0, 8);
