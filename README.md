@@ -20,7 +20,7 @@
                                                                                                                                          
                                                                                                                                          
 
-##Description
+# Description
 
 This project is a demo of how you can attach polygons for regions in Google Maps, 
 and how you can have clusters of Markers. 
@@ -36,13 +36,13 @@ When zoomed in, the cluster dissipates so you can see each marker individually.
 
 ![zoom_in](/docs/zoom_in.png?raw=true "Cluster dissipated")
 
-#Usage
+# Usage
 
 To use it, simply download all the files and open `index.html`. When doing so, 
 **make sure you are using your API key**, otherwise the request to Google Maps 
 will be blocked. 
 
-#Code
+# Code
 
  - `myscript.js` is responsible for creating the polygons and clustering the marks. Depends on `markermanager.js`.
  - `markermanager.js` is my library for managing marker objects from the Google Maps API. 
