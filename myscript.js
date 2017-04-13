@@ -6,7 +6,7 @@
 /*global MarkerManager*/
 
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
+  let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
     center: {
       lat: 38.184,
@@ -49,13 +49,13 @@ function setUpMarkerManager(aMap) {
     inverseCenter = getPolygonCenter(element.coords.coordinates[0]);
 
     if (poisPerDistrict.get(element.id))
-    
-      //For cool markers check https://developers.google.com/chart/image/docs/gallery/dynamic_icons#scalable_pins
+
+    //For cool markers check https://developers.google.com/chart/image/docs/gallery/dynamic_icons#scalable_pins
       disctrictsCenter.push(new google.maps.Marker({
-        position: new google.maps.LatLng(inverseCenter[1], inverseCenter[0]),
-        icon: "https://chart.googleapis.com/chart?chst=d_map_spin&chld=0.6|0|FFFFFF|12|_|" + poisPerDistrict.get(element.id),
-        title: element.name
-      }));
+      position: new google.maps.LatLng(inverseCenter[1], inverseCenter[0]),
+      icon: "https://chart.googleapis.com/chart?chst=d_map_spin&chld=0.6|0|FFFFFF|12|_|" + poisPerDistrict.get(element.id),
+      title: element.name
+    }));
   });
 
   google.maps.event.addListener(mgr, 'loaded', function() {
@@ -65,10 +65,12 @@ function setUpMarkerManager(aMap) {
   });
 }
 
-// http://stackoverflow.com/a/37472218/1337392
-function getRandomColor() {
-  return '#' + Math.random().toString(16).slice(2, 8);
-}
+/**
+ *  Generates a random color for the regions by randomly generating a string.
+ * 
+ * @see {@link http://stackoverflow.com/a/37472218/1337392}
+ */
+const getRandomColor = () => '#' + Math.random().toString(16).slice(2, 8);
 
 function drawDistricts(aMap) {
   let randomColor;
@@ -102,17 +104,24 @@ function getPolygonCoordinates(polygon) {
   return result;
 }
 
-//Check http://stackoverflow.com/a/16282685/1337392
-//Check https://en.wikipedia.org/wiki/Centroid
-function getPolygonCenter(coords) {
-  var minX, maxX, minY, maxY;
-  for (var i = 0; i < coords.length; i++) {
-    minX = (coords[i][0] < minX || minX == null) ? coords[i][0] : minX;
-    maxX = (coords[i][0] > maxX || maxX == null) ? coords[i][0] : maxX;
-    minY = (coords[i][1] < minY || minY == null) ? coords[i][1] : minY;
-    maxY = (coords[i][1] > maxY || maxY == null) ? coords[i][1] : maxY;
-  }
+/**
+ * Calculates the center of the given poligon, defined by the array of 
+ * coordinates.
+ * 
+ * @see {@link http://stackoverflow.com/a/16282685/1337392}
+ * @see {@link https://en.wikipedia.org/wiki/Centroid}
+ */
+const getPolygonCenter = coords => {
+  let minX, maxX, minY, maxY;
+
+  coords.forEach(coordinate => {
+    minX = (coordinate[0] < minX || minX === undefined) ? coordinate[0] : minX;
+    maxX = (coordinate[0] > maxX || maxX === undefined) ? coordinate[0] : maxX;
+    minY = (coordinate[1] < minY || minY === undefined) ? coordinate[1] : minY;
+    maxY = (coordinate[1] > maxY || maxY === undefined) ? coordinate[1] : maxY;
+  });
+
   return [(minX + maxX) / 2, (minY + maxY) / 2];
-}
+};
 
 initMap();
