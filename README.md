@@ -20,7 +20,7 @@
                                                                                                                                          
                                                                                                                                          
 
-#Description
+##Description
 
 This project is a demo of how you can attach polygons for regions in Google Maps, 
 and how you can have clusters of Markers. 
