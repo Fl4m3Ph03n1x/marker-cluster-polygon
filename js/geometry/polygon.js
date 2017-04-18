@@ -6,37 +6,37 @@
  *  Creates a polygon, with the given array of coordinates in  in format 
  *  [lng, lat].
  *  
- *  @module Polygon
+ *  @exports Polygon
  * 
  *  @params     {Array}     An array of coordinates in format [lng, lat].
  *  @returns    {Polygon}   A Polygon Object. 
  * 
  *  @example
- *  {
- *      //From https://developers.google.com/maps/documentation/javascript/examples/polygon-simple
- *      const myPolygon =   polygonFactory([
- *          [-80.190, 25.774], 
- *          [-66.118, 18.466],
- *          [-64.757, 32.321],
- *          [-80.190, 25.774]
- *      ]);
+ *  //From https://developers.google.com/maps/documentation/javascript/examples/polygon-simple
+ *  const myPolygon =   polygonFactory([
+ *      [-80.190, 25.774], 
+ *      [-66.118, 18.466],
+ *      [-64.757, 32.321],
+ *      [-80.190, 25.774]
+ *  ]);
  * 
- *      let {
- *          lat, 
- *          lng
- *      } = myPolygon.getPolygonCenter();
- *      consle.log(`Center is: ${lat}, ${lng}`);
+ *  let {
+ *      lat, 
+ *      lng
+ *  } = myPolygon.getPolygonCenter();
+ *  consle.log(`Center is: ${lat}, ${lng}`);
  *      
- *      myPolygon.getCoordinates().forEach(elem => {
- *          console.log(`Coord is ${elem.lat}, ${elem.lng}`); 
- *      });      
- *  }
+ *  myPolygon.getCoordinates().forEach(elem => {
+ *      console.log(`Coord is ${elem.lat}, ${elem.lng}`); 
+ *  });      
  */
 const polygonFactory = function(theCoordinates) {
 
     /**
      *  Takes an array containing the coordinates in format [lng, lat] and 
      *  transforms it into an array of Coordinates. 
+     *  
+     *  @private
      * 
      *  @returns    {Array} An array containing the coordinates of the polygon.
      *
@@ -55,6 +55,8 @@ const polygonFactory = function(theCoordinates) {
     /**
      * Calculates the center of this polygon, defined by its array of 
      * coordinates.
+     * 
+     * @private
      * 
      * @returns {Coordinate}    The coordinate representing this polygon's
      *                          geometric center.
@@ -81,6 +83,8 @@ const polygonFactory = function(theCoordinates) {
      *  Returns the array of coordinates of this polygon. It is calculated only 
      *  once during the polygon's creation. 
      * 
+     *  @public
+     *  
      *  @returns {Array}    The array of coordinates from the polygon.
      */
     const getCoordinates = () => coordinates;
@@ -88,6 +92,8 @@ const polygonFactory = function(theCoordinates) {
     /**
      *  Returns the center coordinate of this polygon. It is calculated only 
      *  once during the polygon's creation. 
+     *  
+     *  @public
      * 
      *  @returns {Coordinate}   The coordinate that represents the geometric 
      *                          center of the polygon.

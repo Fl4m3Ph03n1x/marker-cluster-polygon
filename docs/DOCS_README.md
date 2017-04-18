@@ -1,26 +1,6 @@
-    $$$$$$$\            $$\                                                                                                              
-    $$  __$$\           $$ |                                                           $$\                                               
-    $$ |  $$ | $$$$$$\  $$ |$$\   $$\  $$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$$\          $$ |                                              
-    $$$$$$$  |$$  __$$\ $$ |$$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$  _____|      $$$$$$$$\                                            
-    $$  ____/ $$ /  $$ |$$ |$$ |  $$ |$$ /  $$ |$$ /  $$ |$$ |  $$ |\$$$$$$\        \__$$  __|                                           
-    $$ |      $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ | \____$$\          $$ |                                              
-    $$ |      \$$$$$$  |$$ |\$$$$$$$ |\$$$$$$$ |\$$$$$$  |$$ |  $$ |$$$$$$$  |         \__|                                              
-    \__|       \______/ \__| \____$$ | \____$$ | \______/ \__|  \__|\_______/                                                            
-                            $$\   $$ |$$\   $$ |                                                                                         
-                            \$$$$$$  |\$$$$$$  |                                                                                         
-                             \______/  \______/                                                                                          
-    $$\      $$\                     $$\                                  $$$$$$\  $$\                       $$\                         
-    $$$\    $$$ |                    $$ |                                $$  __$$\ $$ |                      $$ |                        
-    $$$$\  $$$$ | $$$$$$\   $$$$$$\  $$ |  $$\  $$$$$$\   $$$$$$\        $$ /  \__|$$ |$$\   $$\  $$$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
-    $$\$$\$$ $$ | \____$$\ $$  __$$\ $$ | $$  |$$  __$$\ $$  __$$\       $$ |      $$ |$$ |  $$ |$$  _____|\_$$  _|  $$  __$$\ $$  __$$\ 
-    $$ \$$$  $$ | $$$$$$$ |$$ |  \__|$$$$$$  / $$$$$$$$ |$$ |  \__|      $$ |      $$ |$$ |  $$ |\$$$$$$\    $$ |    $$$$$$$$ |$$ |  \__|
-    $$ |\$  /$$ |$$  __$$ |$$ |      $$  _$$<  $$   ____|$$ |            $$ |  $$\ $$ |$$ |  $$ | \____$$\   $$ |$$\ $$   ____|$$ |      
-    $$ | \_/ $$ |\$$$$$$$ |$$ |      $$ | \$$\ \$$$$$$$\ $$ |            \$$$$$$  |$$ |\$$$$$$  |$$$$$$$  |  \$$$$  |\$$$$$$$\ $$ |      
-    \__|     \__| \_______|\__|      \__|  \__| \_______|\__|             \______/ \__| \______/ \_______/    \____/  \_______|\__|      
-                                                                                                                                         
-                                                                                                                                         
+# Polygon + Marker Cluster
 
-# Description
+## Description
 
 This project is a demo of how you can attach polygons for regions in Google Maps, 
 and how you can have clusters of Markers. 
@@ -36,7 +16,7 @@ When zoomed in, the cluster dissipates so you can see each marker individually.
 
 <img src="zoom_in.png" alt="Cluster dissipated" style="width: 100%;"/>
 
-# Install
+## Install
 
 Download all the files (except the `docs` folder) and **make sure you change the API key**
 under `index.html` to your own:
@@ -46,12 +26,12 @@ under `index.html` to your own:
 This line is in the `<head>` section and it will define wether or not this demo 
 will work for you or not.
 
-# Usage
+## Usage
 
 To use it, open the `index.html` file with a browser of your choice and enjoy. 
 This is mainly a front-end project, so no additional setup is needed. 
 
-# JavaScript Code
+## JavaScript Code
 
 The following files are under the directory `js` and they represent the logic of 
 this demo:

@@ -1,6 +1,11 @@
 {
     "templates":{
-        "theme": "slate"
+        "systemName": "Polygon + Marker Cluster",
+        "theme": "slate",
+        "linenums": true,
+        "outputSourceFiles": true,
+        "outputSourcePath": true,
+        "search": false
     },
     "source":{
         "include": ["js/geometry", "js/utils"],

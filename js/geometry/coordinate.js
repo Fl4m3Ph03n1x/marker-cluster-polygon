@@ -6,13 +6,11 @@
  *  google.maps.polygon that requires an object with this format in order to 
  *  draw a Polygon. 
  *  
- *  @module Coordinate
+ *  @exports Coordinate
  * 
  *  @example
- *  {
- *      lat: 0.0,   //your lat here    
- *      lng: 0.0    //your lng here
- *  }
+ *  const myCoord  = coordinateFactory(0, 1);
+ *  console.log(`Coord is: ${myCoord.lat}, ${myCoord.lng}`);
  *  
  *  @params     {Number}        lat The latitude of the coordinate.
  *  @params     {Number}        lng The longitude of the coordinate.
