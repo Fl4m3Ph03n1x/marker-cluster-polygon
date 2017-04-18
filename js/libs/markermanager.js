@@ -396,7 +396,7 @@ MarkerManager.prototype.removeMarker = function (marker) {
  * Add many markers at once.
  * Does not actually update the map, just the internal grid.
  *
- * @param {Array of Marker} markers The markers to add.
+ * @param {Array} markers The markers to add.
  * @param {Number} minZoom The minimum zoom level to display the markers.
  * @param {Number} opt_maxZoom The maximum zoom level to display the markers.
  */

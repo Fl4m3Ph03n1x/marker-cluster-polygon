@@ -30,19 +30,26 @@ points of interested marked.
 
 When zommed out, the markers are clustered.
 
-![zomm_out](/docs/zoom_out.png?raw=true "Makers Clustered")
+<img src="zoom_out.png" alt="Makers Clustered" style="width: 100%;"/>
 
 When zoomed in, the cluster dissipates so you can see each marker individually.
 
-![zoom_in](/docs/zoom_in.png?raw=true "Cluster dissipated")
+<img src="zoom_in.png" alt="Cluster dissipated" style="width: 100%;"/>
+
+# Install
+
+Download all the files (except the `docs` folder) and **make sure you change the API key**
+under `index.html` to your own:
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+This line is in the `<head>` section and it will define wether or not this demo 
+will work for you or not.
 
 # Usage
 
-To use it, simply download all the files and open `index.html`. When doing so, 
-**make sure you are using your API key**. This key is located in the `<head>` 
-section of `index.html`:
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+To use it, open the `index.html` file with a browser of your choice and enjoy. 
+This is mainly a front-end project, so no additional setup is needed. 
 
 # JavaScript Code
 
@@ -56,3 +63,8 @@ this demo:
  - `utils/randomColor.js` contains a function to help generete random strings of colors.
  - `libs/markermanager.js` is my library for managing marker objects from the Google Maps API.  
  - `myscript.js` is responsible for creating the polygons and clustering the marks. Depends on `markermanager.js`.
+ - 
+
+# License
+
+This work is udner the [MIT license](https://choosealicense.com/licenses/mit/). 

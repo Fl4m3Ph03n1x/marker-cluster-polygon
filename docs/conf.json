@@ -1,0 +1,14 @@
+{
+    "templates":{
+        "theme": "slate"
+    },
+    "source":{
+        "include": ["js/geometry"],
+        "exclude": ["js/libs"]
+    },
+    "opts":{
+        "recurse": true,
+        "destination": "docs",
+        "template": "node_modules/ink-docstrap/template/"
+    }
+}
