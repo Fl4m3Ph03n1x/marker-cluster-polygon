@@ -39,8 +39,10 @@ When zoomed in, the cluster dissipates so you can see each marker individually.
 # Usage
 
 To use it, simply download all the files and open `index.html`. When doing so, 
-**make sure you are using your API key**, otherwise the request to Google Maps 
-will be blocked. 
+**make sure you are using your API key**. This key is located in the `<head>` 
+section of `index.html`:
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
 # Code
 

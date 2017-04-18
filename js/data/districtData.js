@@ -3,11 +3,9 @@
  * Please note that this data set is not perfect! (Has many flaws that were manually corrected!)
  */
 const DISTRICTS = [{
-  id: 'BEJA',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'BEJA',
+    type: "Polygon",
+    coordinates: [
         [-7.117, 38.184],
         [-7.104, 38.174],
         [-7.089, 38.174],
@@ -326,15 +324,11 @@ const DISTRICTS = [{
         [-7.128, 38.178],
         [-7.122, 38.182],
         [-7.117, 38.184]
-      ]
     ]
-  }
 }, {
-  id: 'FARO',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'FARO',
+    type: "Polygon",
+    coordinates: [
         [-7.507, 37.518],
         [-7.499, 37.512],
         [-7.482, 37.501],
@@ -506,15 +500,11 @@ const DISTRICTS = [{
         [-7.54, 37.524],
         [-7.515, 37.528],
         [-7.507, 37.518]
-      ]
     ]
-  }
 }, {
-  id: 'BRAGANCA',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'BRAGANCA',
+    type: "Polygon",
+    coordinates: [
         [-7.083, 41.953],
         [-7.052, 41.942],
         [-7.016, 41.954],
@@ -698,15 +688,12 @@ const DISTRICTS = [{
         [-7.146, 41.988],
         [-7.114, 41.973],
         [-7.083, 41.953]
-      ]
     ]
-  }
+
 }, {
-  id: 'COIMBRA',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'COIMBRA',
+    type: "Polygon",
+    coordinates: [
         [-8.35, 40.372],
         [-8.339, 40.368],
         [-8.329, 40.362],
@@ -956,15 +943,12 @@ const DISTRICTS = [{
         [-8.358, 40.356],
         [-8.359, 40.365],
         [-8.35, 40.372]
-      ]
     ]
-  }
+
 }, {
-  id: 'GUARDA',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'GUARDA',
+    type: "Polygon",
+    coordinates: [
         [-7.122, 41.16],
         [-7.116, 41.156],
         [-7.11, 41.153],
@@ -1190,15 +1174,12 @@ const DISTRICTS = [{
         [-7.122, 41.171],
         [-7.126, 41.164],
         [-7.122, 41.16]
-      ]
     ]
-  }
+
 }, {
-  id: 'VISEU',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'VISEU',
+    type: "Polygon",
+    coordinates: [
         [-7.301, 41.159],
         [-7.326, 41.095],
         [-7.335, 41.065],
@@ -1390,15 +1371,12 @@ const DISTRICTS = [{
         [-7.36, 41.166],
         [-7.326, 41.158],
         [-7.301, 41.159]
-      ]
     ]
-  }
+
 }, {
-  id: 'SANTAREM',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'SANTAREM',
+    type: "Polygon",
+    coordinates: [
         [-8.279, 39.795],
         [-8.273, 39.779],
         [-8.263, 39.774],
@@ -1720,15 +1698,12 @@ const DISTRICTS = [{
         [-8.328, 39.8],
         [-8.321, 39.798],
         [-8.279, 39.795]
-      ]
     ]
-  }
+
 }, {
-  id: 'LEIRIA',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'LEIRIA',
+    type: "Polygon",
+    coordinates: [
         [-8.126, 39.921],
         [-8.146, 39.891],
         [-8.156, 39.884],
@@ -1951,15 +1926,12 @@ const DISTRICTS = [{
         [-8.124, 39.935],
         [-8.123, 39.933],
         [-8.126, 39.921]
-      ]
     ]
-  }
+
 }, {
-  id: 'PORTALEGRE',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'PORTALEGRE',
+    type: "Polygon",
+    coordinates: [
         [-7.549, 39.664],
         [-7.516, 39.594],
         [-7.498, 39.581],
@@ -2196,15 +2168,12 @@ const DISTRICTS = [{
         [-7.556, 39.677],
         [-7.556, 39.677],
         [-7.549, 39.664]
-      ]
     ]
-  }
+
 }, {
-  id: 'AVEIRO',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'AVEIRO',
+    type: "Polygon",
+    coordinates: [
         [-8.35, 40.372],
         [-8.359, 40.365],
         [-8.358, 40.356],
@@ -2409,15 +2378,12 @@ const DISTRICTS = [{
         [-8.326, 40.437],
         [-8.354, 40.403],
         [-8.35, 40.372]
-      ]
     ]
-  }
+
 }, {
-  id: 'BRAGA',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'BRAGA',
+    type: "Polygon",
+    coordinates: [
         [-8.048, 41.809],
         [-8.049, 41.803],
         [-8.055, 41.797],
@@ -2602,15 +2568,12 @@ const DISTRICTS = [{
         [-8.051, 41.816],
         [-8.048, 41.814],
         [-8.048, 41.809]
-      ]
     ]
-  }
+
 }, {
-  id: 'PORTO',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'PORTO',
+    type: "Polygon",
+    coordinates: [
         [-7.976, 41.37],
         [-7.959, 41.354],
         [-7.96, 41.345],
@@ -2747,15 +2710,12 @@ const DISTRICTS = [{
         [-7.981, 41.356],
         [-7.979, 41.36],
         [-7.976, 41.37]
-      ]
     ]
-  }
+
 }, {
-  id: 'VIANA_DO_CASTELO',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'VIANA_DO_CASTELO',
+    type: "Polygon",
+    coordinates: [
         [-8.204, 42.07],
         [-8.192, 42.062],
         [-8.177, 42.066],
@@ -2868,15 +2828,12 @@ const DISTRICTS = [{
         [-8.205, 42.129],
         [-8.208, 42.086],
         [-8.204, 42.07]
-      ]
     ]
-  }
+
 }, {
-  id: 'EVORA',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'EVORA',
+    type: "Polygon",
+    coordinates: [
         [-8.105, 38.984],
         [-8.098, 38.978],
         [-8.092, 38.979],
@@ -3207,15 +3164,12 @@ const DISTRICTS = [{
         [-8.106, 39.011],
         [-8.109, 38.997],
         [-8.105, 38.984]
-      ]
     ]
-  }
+
 }, {
-  id: 'CASTELO_BRANCO',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'CASTELO_BRANCO',
+    type: "Polygon",
+    coordinates: [
         [-7.271, 40.41],
         [-7.28, 40.35],
         [-7.292, 40.324],
@@ -3476,15 +3430,12 @@ const DISTRICTS = [{
         [-7.291, 40.414],
         [-7.283, 40.414],
         [-7.271, 40.41]
-      ]
     ]
-  }
+
 }, {
-  id: 'VILA_REAL',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'VILA_REAL',
+    type: "Polygon",
+    coordinates: [
         [-7.904, 41.887],
         [-7.897, 41.858],
         [-7.865, 41.858],
@@ -3687,15 +3638,12 @@ const DISTRICTS = [{
         [-7.926, 41.909],
         [-7.907, 41.914],
         [-7.904, 41.887]
-      ]
     ]
-  }
+
 }, {
-  id: 'LISBOA',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
+    id: 'LISBOA',
+    type: "Polygon",
+    coordinates: [
         [-9.249, 39.317],
         [-9.236, 39.315],
         [-9.231, 39.316],
@@ -3783,16 +3731,12 @@ const DISTRICTS = [{
         [-9.3, 39.293],
         [-9.257, 39.313],
         [-9.249, 39.317]
-      ]
     ]
-  }
+
 }, {
-  id: 'SETUBAL',
-  coords: {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        
+    id: 'SETUBAL',
+    type: "Polygon",
+    coordinates: [
         [-8.941, 38.853],
         [-8.956, 38.841],
         [-8.956, 38.829],
@@ -4117,7 +4061,5 @@ const DISTRICTS = [{
         [-8.919, 38.883],
         [-8.934, 38.861],
         [-8.941, 38.853]
-      ]
     ]
-  }
 }];
