@@ -44,12 +44,15 @@ section of `index.html`:
 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
-# Code
+# JavaScript Code
 
+The following files are under the directory `js` and they represent the logic of 
+this demo:
+
+ - `data/poiData.js` is the file containing the data for the points of interest. To find the coordinates of a point of interest you can use https://google-developers.appspot.com/maps/documentation/utils/geocoder/
+ - `data/districtData.js` constains the coordinates that define the district's polygon shape.
+ - `geometry/coordinate.js` representes a coordinate object.
+ - `geometry/polygon.js` represents a polygon object. Contains mathematical calculations for polygons.
+ - `utils/randomColor.js` contains a function to help generete random strings of colors.
+ - `libs/markermanager.js` is my library for managing marker objects from the Google Maps API.  
  - `myscript.js` is responsible for creating the polygons and clustering the marks. Depends on `markermanager.js`.
- - `markermanager.js` is my library for managing marker objects from the Google Maps API. 
- - `poiData.js` is the file containing the data for the points of interest. To find the coordinates of a point of interest you can use https://google-developers.appspot.com/maps/documentation/utils/geocoder/
- - `districtData.js` constains the coordinates that define the district's polygon shape.
- - `mystyle.css` has some basic CSS rules.
- - `index.html` is the HTML page. Open it to run the project.
-
