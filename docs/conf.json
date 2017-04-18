@@ -3,7 +3,7 @@
         "theme": "slate"
     },
     "source":{
-        "include": ["js/geometry"],
+        "include": ["js/geometry", "js/utils", "js/myscript.js"],
         "exclude": ["js/libs"]
     },
     "opts":{
