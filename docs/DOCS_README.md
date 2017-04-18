@@ -30,11 +30,11 @@ points of interested marked.
 
 When zommed out, the markers are clustered.
 
-<img src="docs/zoom_out.png" alt="Makers Clustered" style="width: 100%;"/>
+<img src="zoom_out.png" alt="Makers Clustered" style="width: 100%;"/>
 
 When zoomed in, the cluster dissipates so you can see each marker individually.
 
-<img src="docs/zoom_in.png" alt="Cluster dissipated" style="width: 100%;"/>
+<img src="zoom_in.png" alt="Cluster dissipated" style="width: 100%;"/>
 
 # Install
 
