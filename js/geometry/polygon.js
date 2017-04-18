@@ -5,9 +5,32 @@
 /**
  *  Creates a polygon, with the given array of coordinates in  in format 
  *  [lng, lat].
+ *  
+ *  @module Polygon
  * 
  *  @params     {Array}     An array of coordinates in format [lng, lat].
  *  @returns    {Polygon}   A Polygon Object. 
+ * 
+ *  @example
+ *  {
+ *      //From https://developers.google.com/maps/documentation/javascript/examples/polygon-simple
+ *      const myPolygon =   polygonFactory([
+ *          [-80.190, 25.774], 
+ *          [-66.118, 18.466],
+ *          [-64.757, 32.321],
+ *          [-80.190, 25.774]
+ *      ]);
+ * 
+ *      let {
+ *          lat, 
+ *          lng
+ *      } = myPolygon.getPolygonCenter();
+ *      consle.log(`Center is: ${lat}, ${lng}`);
+ *      
+ *      myPolygon.getCoordinates().forEach(elem => {
+ *          console.log(`Coord is ${elem.lat}, ${elem.lng}`); 
+ *      });      
+ *  }
  */
 const polygonFactory = function(theCoordinates) {
 

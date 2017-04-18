@@ -5,6 +5,8 @@
  *  object is a useful abstraction as it encapsulates a requirement by the 
  *  google.maps.polygon that requires an object with this format in order to 
  *  draw a Polygon. 
+ *  
+ *  @module Coordinate
  * 
  *  @example
  *  {

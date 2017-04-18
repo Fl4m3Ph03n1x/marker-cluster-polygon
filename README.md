@@ -38,7 +38,10 @@ When zoomed in, the cluster dissipates so you can see each marker individually.
 
 # Documentation
 
-All the documentation for this demo can be seen at the [Officical Docs](https://fl4m3ph03n1x.github.io/marker-cluster-polygon/).
+All the documentation for this demo can be seen at the [Official Docs](https://fl4m3ph03n1x.github.io/marker-cluster-polygon/).
+
+The documentation was automatically generated using [docstrap](https://github.com/docstrap/docstrap) in conjunction 
+with [jsdoc](http://usejsdoc.org/).
 
 # License
 

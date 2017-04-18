@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Index</title>
+	<title>Documentation Module: Polygon</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -72,76 +72,110 @@
 		<div id="main">
 			
 
+	<h1 class="page-title">Module: Polygon</h1>
+<section>
+
+<header>
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">Creates a polygon, with the given array of coordinates in  in format 
+ [lng, lat].</div>
+        
+
+        
+<dl class="details">
+    
+
 	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
 	
 
 
 
-
-
-
-
-
-
-
-
-	
 	
 
+	
+
+	
+
+	
+</dl>
 
 
+        
+            <h3>Example</h3>
+            
+    <pre class="sunlight-highlight-javascript">{
+     //From https://developers.google.com/maps/documentation/javascript/examples/polygon-simple
+     const myPolygon =   polygonFactory([
+         [-80.190, 25.774], 
+         [-66.118, 18.466],
+         [-64.757, 32.321],
+         [-80.190, 25.774]
+     ]);
+
+     let {
+         lat, 
+         lng
+     } = myPolygon.getPolygonCenter();
+     consle.log(&#x60;Center is: ${lat}, ${lng}&#x60;);
+     
+     myPolygon.getCoordinates().forEach(elem =&gt; {
+         console.log(&#x60;Coord is ${elem.lat}, ${elem.lng}&#x60;); 
+     });      
+ }</pre>
 
 
-    <section class="readme-section">
-        <article><pre class="prettyprint source"><code>$$$$$$$\            $$\                                                                                                              
-$$  __$$\           $$ |                                                           $$\                                               
-$$ |  $$ | $$$$$$\  $$ |$$\   $$\  $$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$$\          $$ |                                              
-$$$$$$$  |$$  __$$\ $$ |$$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$  _____|      $$$$$$$$\                                            
-$$  ____/ $$ /  $$ |$$ |$$ |  $$ |$$ /  $$ |$$ /  $$ |$$ |  $$ |\$$$$$$\        \__$$  __|                                           
-$$ |      $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ | \____$$\          $$ |                                              
-$$ |      \$$$$$$  |$$ |\$$$$$$$ |\$$$$$$$ |\$$$$$$  |$$ |  $$ |$$$$$$$  |         \__|                                              
-\__|       \______/ \__| \____$$ | \____$$ | \______/ \__|  \__|\_______/                                                            
-                        $$\   $$ |$$\   $$ |                                                                                         
-                        \$$$$$$  |\$$$$$$  |                                                                                         
-                         \______/  \______/                                                                                          
-$$\      $$\                     $$\                                  $$$$$$\  $$\                       $$\                         
-$$$\    $$$ |                    $$ |                                $$  __$$\ $$ |                      $$ |                        
-$$$$\  $$$$ | $$$$$$\   $$$$$$\  $$ |  $$\  $$$$$$\   $$$$$$\        $$ /  \__|$$ |$$\   $$\  $$$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
-$$\$$\$$ $$ | \____$$\ $$  __$$\ $$ | $$  |$$  __$$\ $$  __$$\       $$ |      $$ |$$ |  $$ |$$  _____|\_$$  _|  $$  __$$\ $$  __$$\ 
-$$ \$$$  $$ | $$$$$$$ |$$ |  \__|$$$$$$  / $$$$$$$$ |$$ |  \__|      $$ |      $$ |$$ |  $$ |\$$$$$$\    $$ |    $$$$$$$$ |$$ |  \__|
-$$ |\$  /$$ |$$  __$$ |$$ |      $$  _$$&lt;  $$   ____|$$ |            $$ |  $$\ $$ |$$ |  $$ | \____$$\   $$ |$$\ $$   ____|$$ |      
-$$ | \_/ $$ |\$$$$$$$ |$$ |      $$ | \$$\ \$$$$$$$\ $$ |            \$$$$$$  |$$ |\$$$$$$  |$$$$$$$  |  \$$$$  |\$$$$$$$\ $$ |      
-\__|     \__| \_______|\__|      \__|  \__| \_______|\__|             \______/ \__| \______/ \_______/    \____/  \_______|\__|      </code></pre><h1>Description</h1><p>This project is a demo of how you can attach polygons for regions in Google Maps, 
-and how you can have clusters of Markers. </p>
-<p>In this sample, you can see Portugal divided by its districts, as well as some
-points of interested marked.</p>
-<p>When zommed out, the markers are clustered.</p>
-<p><img src="zoom_out.png" alt="Makers Clustered" style="width: 100%;"/></p>
-<p>When zoomed in, the cluster dissipates so you can see each marker individually.</p>
-<p><img src="zoom_in.png" alt="Cluster dissipated" style="width: 100%;"/></p>
-<h1>Install</h1><p>Download all the files (except the <code>docs</code> folder) and <strong>make sure you change the API key</strong>
-under <code>index.html</code> to your own:</p>
-<pre class="prettyprint source"><code>&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&quot;>&lt;/script></code></pre><p>This line is in the <code>&lt;head&gt;</code> section and it will define wether or not this demo 
-will work for you or not.</p>
-<h1>Usage</h1><p>To use it, open the <code>index.html</code> file with a browser of your choice and enjoy. 
-This is mainly a front-end project, so no additional setup is needed. </p>
-<h1>JavaScript Code</h1><p>The following files are under the directory <code>js</code> and they represent the logic of 
-this demo:</p>
-<ul>
-<li><code>data/poiData.js</code> is the file containing the data for the points of interest. To find the coordinates of a point of interest you can use https://google-developers.appspot.com/maps/documentation/utils/geocoder/</li>
-<li><code>data/districtData.js</code> constains the coordinates that define the district's polygon shape.</li>
-<li><code>geometry/coordinate.js</code> representes a coordinate object.</li>
-<li><code>geometry/polygon.js</code> represents a polygon object. Contains mathematical calculations for polygons.</li>
-<li><code>utils/randomColor.js</code> contains a function to help generete random strings of colors.</li>
-<li><code>libs/markermanager.js</code> is my library for managing marker objects from the Google Maps API.  </li>
-<li><code>myscript.js</code> is responsible for creating the polygons and clustering the marks. Depends on <code>markermanager.js</code>.</li>
-<li></li>
-</ul>
-<h1>License</h1><p>This work is udner the <a href="https://choosealicense.com/licenses/mit/">MIT license</a>. </p></article>
-    </section>
+        
+    
+    </div>
 
+    
 
+    
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 
